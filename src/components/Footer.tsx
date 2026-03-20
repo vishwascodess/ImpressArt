@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="footer-content">
         <div className="footer-brand">
           <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: '12px', textDecoration: 'none', marginBottom: '8px' }}>
-            <img src="/logo.jpg" alt="ImpressArt Logo" className="logo-img-lg" />
+            <img src={`${import.meta.env.BASE_URL}logo.jpg`} alt="ImpressArt Logo" className="logo-img-lg" />
             <h2 className="font-bold">ImpressArt</h2>
           </Link>
           <p className="footer-desc">

@@ -2,14 +2,16 @@ import { FiLayers } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import './Gallery.css';
 
+const base = import.meta.env.BASE_URL;
+
 const Gallery = () => {
   const projects = [
-    { img: "/sign-image-3.png", title: "Factory Safety Suite", desc: "Industrial Signage" },
-    { img: "/sign-image-4.png", title: "High-Volume Flex Print", desc: "Large Format Printing" },
-    { img: "/sign-image-5.png", title: "Minimalist Lobby Logo", desc: "Corporate Signage" },
-    { img: "/sign-image-6.png", title: "Modern Backlit Storefront", desc: "Retail Signage" },
-    { img: "/sign-image-1.png", title: "Glowing Acrylic 3D", desc: "Premium Sign Letters" },
-    { img: "/sign-image-2.png", title: "Metro City Hoarding", desc: "Outdoor Billboard" }
+    { img: `${base}sign-image-3.png`, title: "Factory Safety Suite", desc: "Industrial Signage" },
+    { img: `${base}sign-image-4.png`, title: "High-Volume Flex Print", desc: "Large Format Printing" },
+    { img: `${base}sign-image-5.png`, title: "Minimalist Lobby Logo", desc: "Corporate Signage" },
+    { img: `${base}sign-image-6.png`, title: "Modern Backlit Storefront", desc: "Retail Signage" },
+    { img: `${base}sign-image-1.png`, title: "Glowing Acrylic 3D", desc: "Premium Sign Letters" },
+    { img: `${base}sign-image-2.png`, title: "Metro City Hoarding", desc: "Outdoor Billboard" }
   ];
 
   return (

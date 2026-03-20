@@ -11,7 +11,7 @@ const Navbar = () => {
       <div className="nav-container">
         <div className="nav-logo">
           <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-            <img src="/logo.jpg" alt="ImpressArt Logo" className="logo-img" />
+            <img src={`${import.meta.env.BASE_URL}logo.jpg`} alt="ImpressArt Logo" className="logo-img" />
             <span className="text-gradient font-bold">ImpressArt</span>
           </Link>
         </div>
